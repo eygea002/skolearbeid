@@ -1,0 +1,317 @@
+<section class="book">
+    <img src="bok.jpg" alt="HTML and CSS av Jon Duckett">
+
+    <div class="book-content">
+        <h1>HTML and CSS</h1>
+
+        <h2>Jon Duckett</h2>
+
+        <p>
+            Lær å bygge moderne nettsider
+            med HTML og CSS.
+        </p>
+
+        <h3>Mine læringsmål</h3>
+
+        <ul>
+            <li>Forstå HTML-struktur</li>
+            <li>Lære CSS-design</li>
+            <li>Bygge responsive nettsider</li>
+            <li>Utvikle egne webprosjekter</li>
+        </ul>
+    </div>
+</section>
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NÆRVÆR | Min utviklingsreise</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVIGASJON -->
+<header class="header">
+    <a href="#home" class="logo">NÆRVÆR</a>
+
+    <nav>
+        <a href="#home">Hjem</a>
+        <a href="#personlig">Personlig utvikling</a>
+        <a href="#teknologi">Teknologi</a>
+        <a href="#bibliotek">Bibliotek</a>
+        <a href="#dagbok">Dagbok</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <span>PERSONLIG OG TEKNOLOGISK UTVIKLING</span>
+
+        <h1>Din reise begynner<br>med ett øyeblikk.</h1>
+
+        <p>
+            Utvikle bevissthet, kunnskap og kreativitet.
+            Bygg gode vaner og skap nye muligheter.
+        </p>
+
+        <a href="#dashboard" class="button">
+            Utforsk utviklingen
+        </a>
+    </div>
+</section>
+
+<main>
+
+<!-- DASHBOARD -->
+<section id="dashboard" class="section">
+    <div class="section-heading">
+        <span>OVERSIKT</span>
+        <h2>Mitt dashboard</h2>
+        <p>En oversikt over din personlige utviklingsreise.</p>
+    </div>
+
+    <div class="dashboard">
+
+        <div class="stat-card">
+            <span>📚</span>
+            <h3 id="bookCount">0</h3>
+            <p>Bøker påbegynt</p>
+        </div>
+
+        <div class="stat-card">
+            <span>✓</span>
+            <h3 id="taskCount">0</h3>
+            <p>Oppgaver fullført i dag</p>
+        </div>
+
+        <div class="stat-card">
+            <span>✍️</span>
+            <h3 id="reflectionCount">0</h3>
+            <p>Refleksjoner lagret</p>
+        </div>
+
+        <div class="stat-card">
+            <span>🌱</span>
+            <h3 id="overallProgress">0%</h3>
+            <p>Gjennomsnittlig leseprogresjon</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- PERSONLIG UTVIKLING -->
+<section id="personlig" class="section">
+    <div class="section-heading">
+        <span>INDRE UTVIKLING</span>
+        <h2>Personlig utvikling</h2>
+        <p>
+            Bli bedre kjent med deg selv gjennom nærvær,
+            refleksjon og bevissthet.
+        </p>
+    </div>
+
+    <div class="content-grid">
+
+        <article class="content-card">
+            <h3>01 · Bevissthet</h3>
+            <p>
+                Observer tankene dine og utvikle
+                større forståelse for egne reaksjoner.
+            </p>
+            <a href="#bibliotek">Utforsk bøker →</a>
+        </article>
+
+        <article class="content-card">
+            <h3>02 · Nærvær</h3>
+            <p>
+                Tren på å være til stede i øyeblikket
+                gjennom pust og stillhet.
+            </p>
+            <a href="#daglige">Dagens øvelser →</a>
+        </article>
+
+        <article class="content-card">
+            <h3>03 · Selvutvikling</h3>
+            <p>
+                Utvikle gode vaner, selvinnsikt
+                og personlig vekst.
+            </p>
+            <a href="#dagbok">Skriv refleksjoner →</a>
+        </article>
+
+    </div>
+</section>
+
+<!-- TEKNOLOGISK UTVIKLING -->
+<section id="teknologi" class="section technology">
+    <div class="section-heading">
+        <span>DIGITAL KOMPETANSE</span>
+        <h2>Teknologisk utvikling</h2>
+        <p>Lær å bygge dine egne digitale løsninger.</p>
+    </div>
+
+    <div class="content-grid">
+
+        <article class="content-card">
+            <h3>HTML</h3>
+            <p>Bygg struktur og innhold på nettsider.</p>
+            <span class="technology-tag">Grunnleggende</span>
+        </article>
+
+        <article class="content-card">
+            <h3>CSS</h3>
+            <p>Utvikle design, farger og responsive nettsider.</p>
+            <span class="technology-tag">Webdesign</span>
+        </article>
+
+        <article class="content-card">
+            <h3>JavaScript</h3>
+            <p>Lag interaktive funksjoner og dynamiske løsninger.</p>
+            <span class="technology-tag">Programmering</span>
+        </article>
+
+    </div>
+</section>
+
+<!-- DIGITALT BIBLIOTEK -->
+<section id="bibliotek" class="section">
+    <div class="section-heading">
+        <span>KUNNSKAP OG LÆRING</span>
+        <h2>Mitt digitale bibliotek</h2>
+        <p>Bøker som inspirerer til utvikling og læring.</p>
+    </div>
+
+    <div class="book-grid">
+
+        <article class="book-card">
+            <img
+                src="https://covers.openlibrary.org/b/isbn/9780452289963-L.jpg"
+                alt="En ny jord">
+
+            <div>
+                <span>PERSONLIG UTVIKLING</span>
+                <h3>En ny jord</h3>
+                <p>Eckhart Tolle</p>
+
+                <label for="book1">Leseprogresjon</label>
+                <input
+                    type="range"
+                    id="book1"
+                    min="0"
+                    max="100"
+                    value="0">
+
+                <p id="book1Value">0% lest</p>
+            </div>
+        </article>
+
+        <article class="book-card">
+            <img
+                src="https://covers.openlibrary.org/b/isbn/9781118008188-L.jpg"
+                alt="HTML and CSS av Jon Duckett">
+
+            <div>
+                <span>TEKNOLOGISK UTVIKLING</span>
+                <h3>HTML and CSS</h3>
+                <p>Jon Duckett</p>
+
+                <label for="book2">Leseprogresjon</label>
+                <input
+                    type="range"
+                    id="book2"
+                    min="0"
+                    max="100"
+                    value="0">
+
+                <p id="book2Value">0% lest</p>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<!-- DAGLIGE ØVELSER -->
+<section id="daglige" class="section daily-section">
+    <div class="section-heading">
+        <span>DAGLIG PRAKSIS</span>
+        <h2>Mine daglige øvelser</h2>
+    </div>
+
+    <div id="taskList" class="task-list">
+
+        <label>
+            <input type="checkbox" value="pust">
+            5 minutter med bevisst pust
+        </label>
+
+        <label>
+            <input type="checkbox" value="meditasjon">
+            10 minutter med stillhet
+        </label>
+
+        <label>
+            <input type="checkbox" value="lesing">
+            Les 10 sider i en bok
+        </label>
+
+        <label>
+            <input type="checkbox" value="laering">
+            Lær noe nytt om HTML, CSS eller JavaScript
+        </label>
+
+        <label>
+            <input type="checkbox" value="refleksjon">
+            Skriv dagens refleksjon
+        </label>
+
+    </div>
+
+    <div class="progress-track">
+        <div id="dailyProgress"></div>
+    </div>
+
+    <p id="dailyProgressText">0 av 5 fullført</p>
+</section>
+
+<!-- REFLEKSJONSDAGBOK -->
+<section id="dagbok" class="section journal">
+    <div class="section-heading">
+        <span>PERSONLIG REFLEKSJON</span>
+        <h2>Min dagbok</h2>
+        <p>Hva har jeg lært om meg selv i dag?</p>
+    </div>
+
+    <textarea
+        id="journalText"
+        placeholder="Skriv dine tanker, erfaringer og refleksjoner...">
+    </textarea>
+
+    <button id="saveJournal" class="button">
+        Lagre refleksjon
+    </button>
+
+    <p id="journalStatus" aria-live="polite"></p>
+
+    <h3>Tidligere refleksjoner</h3>
+    <div id="journalHistory"></div>
+</section>
+
+</main>
+
+<footer>
+    <h2>NÆRVÆR</h2>
+    <p>Bevissthet · Kunnskap · Personlig utvikling</p>
+    <p>© 2026 Mitt utviklingsprosjekt</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+<link rel="stylesheet" href="style.css">
+

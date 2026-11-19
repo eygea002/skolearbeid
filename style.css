@@ -1,0 +1,716 @@
+.book {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    background: #f5f2eb;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.book img {
+    width: 180px;
+    border-radius: 8px;
+}
+
+.book-content h1 {
+    color: #314d3c;
+    font-size: 32px;
+}
+
+.book-content h2 {
+    color: #8b927f;
+}
+
+.book-content p {
+    line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+    .book {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+:root {
+    --green: #304b3a;
+    --dark: #203329;
+    --light: #f5f2eb;
+    --beige: #e8e3d6;
+    --gold: #c7ae7d;
+    --text: #35443a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--light);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+.header {
+    background: var(--dark);
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-family: Georgia, serif;
+    font-size: 27px;
+    letter-spacing: 3px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: var(--gold);
+}
+
+.hero {
+    min-height: 490px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+
+    background:
+        linear-gradient(
+            rgba(25, 49, 36, .75),
+            rgba(25, 49, 36, .75)
+        ),
+        url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e")
+        center/cover;
+
+    color: white;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero-content span,
+.section-heading span {
+    color: var(--gold);
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(40px, 7vw, 65px);
+    line-height: 1.15;
+    margin: 20px 0;
+}
+
+.hero p {
+    margin: 20px 0;
+}
+
+.button {
+    display: inline-block;
+    border: none;
+    background: var(--gold);
+    color: var(--dark);
+    padding: 13px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #ddcba7;
+}
+
+main {
+    max-width: 1150px;
+    margin: auto;
+    padding: 0 25px;
+}
+
+.section {
+    padding: 75px 0;
+    scroll-margin-top: 30px;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading h2 {
+    font-family: Georgia, serif;
+    font-size: 34px;
+    margin: 8px 0;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.stat-card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px #00000008;
+}
+
+.stat-card span {
+    font-size: 27px;
+}
+
+.stat-card h3 {
+    font-size: 32px;
+    color: var(--green);
+    margin: 10px 0;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.content-card {
+    background: white;
+    padding: 28px;
+    border-radius: 14px;
+    transition: transform .2s;
+}
+
+.content-card:hover {
+    transform: translateY(-5px);
+}
+
+.content-card h3 {
+    font-size: 23px;
+    color: var(--green);
+    margin-bottom: 12px;
+}
+
+.content-card a {
+    display: inline-block;
+    margin-top: 20px;
+    color: var(--green);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.technology {
+    background: var(--beige);
+    padding: 65px 30px;
+    border-radius: 18px;
+}
+
+.technology-tag {
+    display: inline-block;
+    margin-top: 20px;
+    background: #e8eadf;
+    padding: 6px 13px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.book-card {
+    display: flex;
+    gap: 22px;
+    background: white;
+    padding: 22px;
+    border-radius: 14px;
+}
+
+.book-card img {
+    width: 120px;
+    height: 180px;
+    object-fit: contain;
+    align-self: flex-start;
+}
+
+.book-card div {
+    flex: 1;
+    min-width: 0;
+}
+
+.book-card span {
+    font-size: 10px;
+    color: #8d7955;
+    letter-spacing: 1px;
+}
+
+.book-card h3 {
+    margin: 8px 0;
+    font-size: 21px;
+}
+
+.book-card input {
+    width: 100%;
+    accent-color: var(--green);
+    margin-top: 10px;
+}
+
+.daily-section {
+    background: var(--beige);
+    padding: 40px;
+    border-radius: 18px;
+}
+
+.task-list label {
+    display: block;
+    background: white;
+    padding: 15px;
+    border-radius: 9px;
+    margin: 12px 0;
+    cursor: pointer;
+}
+
+.task-list input {
+    accent-color: var(--green);
+    margin-right: 12px;
+}
+
+.task-list input:checked + span {
+    text-decoration: line-through;
+}
+
+.progress-track {
+    height: 13px;
+    background: #d2d1c6;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 25px;
+}
+
+#dailyProgress {
+    height: 100%;
+    width: 0;
+    background: #54785a;
+    transition: width .3s;
+}
+
+#dailyProgressText {
+    margin-top: 12px;
+}
+
+.journal textarea {
+    width: 100%;
+    min-height: 180px;
+    padding: 20px;
+    border: 1px solid #d5d2c9;
+    border-radius: 12px;
+    background: white;
+    font: inherit;
+    resize: vertical;
+}
+
+#journalStatus {
+    margin: 12px 0 25px;
+    color: var(--green);
+}
+
+#journalHistory {
+    margin-top: 15px;
+}
+
+.history-item {
+    background: white;
+    padding: 18px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    overflow-wrap: anywhere;
+}
+
+.history-item small {
+    color: #888;
+}
+
+.history-item p {
+    white-space: pre-wrap;
+    margin-top: 8px;
+}
+
+footer {
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+footer h2 {
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 850px) {
+    .dashboard {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .book-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 400px;
+    }
+
+    .section {
+        padding: 45px 0;
+    }
+
+    .section-heading h2 {
+        font-size: 27px;
+    }
+
+    .dashboard {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .stat-card {
+        padding: 16px;
+    }
+
+    .stat-card h3 {
+        font-size: 25px;
+    }
+
+    .book-card {
+        gap: 12px;
+        padding: 14px;
+    }
+
+    .book-card img {
+        width: 90px;
+        height: 140px;
+    }
+
+    .daily-section {
+        padding: 22px;
+    }
+}
+4. script.js – funksjonalitet og lagring
+Denne filen håndterer:
+
+Automatisk lagring av leseprogresjon.
+
+Daglige avkryssinger.
+
+Refleksjonsdagbok med historikk.
+
+Dashboard som oppdateres automatisk.
+
+Lagring i nettleserens LocalStorage.
+
+
+javascript
+
+// ======================================
+// NÆRVÆR – JAVASCRIPT
+// ======================================
+
+const STORAGE = {
+    journal: "naervaer_journal",
+    tasks: "naervaer_tasks_",
+    books: "naervaer_books"
+};
+
+// Hjelpefunksjon for dato
+function today() {
+    return new Date().toLocaleDateString("no-NO");
+}
+
+// ======================================
+// 1. BIBLIOTEK OG LESEPROGRESJON
+// ======================================
+
+const bookInputs = [
+    document.getElementById("book1"),
+    document.getElementById("book2")
+];
+
+function updateBooks() {
+
+    let started = 0;
+    let total = 0;
+
+    bookInputs.forEach((input, index) => {
+
+        const value = Number(input.value);
+
+        total += value;
+
+        if (value > 0) started++;
+
+        document.getElementById(
+            `book${index + 1}Value`
+        ).textContent = value + "% lest";
+
+    });
+
+    const average = Math.round(total / bookInputs.length);
+
+    document.getElementById("bookCount").textContent =
+        started;
+
+    document.getElementById("overallProgress").textContent =
+        average + "%";
+
+    const progress = bookInputs.map(input =>
+        Number(input.value)
+    );
+
+    localStorage.setItem(
+        STORAGE.books,
+        JSON.stringify(progress)
+    );
+}
+
+// Hent lagret leseprogresjon
+const savedBooks = JSON.parse(
+    localStorage.getItem(STORAGE.books) || "[0,0]"
+);
+
+bookInputs.forEach((input, index) => {
+
+    input.value = savedBooks[index] ?? 0;
+
+    input.addEventListener("input", updateBooks);
+
+});
+
+updateBooks();
+
+
+// ======================================
+// 2. DAGLIGE ØVELSER
+// ======================================
+
+const tasks = document.querySelectorAll(
+    '#taskList input[type="checkbox"]'
+);
+
+function loadTasks() {
+
+    const key = STORAGE.tasks + today();
+
+    const saved = JSON.parse(
+        localStorage.getItem(key) || "{}"
+    );
+
+    tasks.forEach(task => {
+        task.checked = saved[task.value] === true;
+        task.addEventListener("change", saveTasks);
+    });
+
+    updateTasks();
+}
+
+function saveTasks() {
+
+    const key = STORAGE.tasks + today();
+
+    const data = {};
+
+    tasks.forEach(task => {
+        data[task.value] = task.checked;
+    });
+
+    localStorage.setItem(
+        key,
+        JSON.stringify(data)
+    );
+
+    updateTasks();
+}
+
+function updateTasks() {
+
+    const completed = [...tasks].filter(
+        task => task.checked
+    ).length;
+
+    const percentage =
+        (completed / tasks.length) * 100;
+
+    document.getElementById("dailyProgress").style.width =
+        percentage + "%";
+
+    document.getElementById("dailyProgressText")
+        .textContent =
+        `${completed} av ${tasks.length} oppgaver fullført`;
+
+    document.getElementById("taskCount").textContent =
+        completed;
+}
+
+loadTasks();
+
+
+// ======================================
+// 3. REFLEKSJONSDAGBOK
+// ======================================
+
+const journalText = document.getElementById("journalText");
+
+const journalStatus = document.getElementById("journalStatus");
+
+const saveJournal = document.getElementById("saveJournal");
+
+function getJournal() {
+
+    return JSON.parse(
+        localStorage.getItem(STORAGE.journal) || "[]"
+    );
+
+}
+
+function saveReflection() {
+
+    const text = journalText.value.trim();
+
+    if (!text) {
+        journalStatus.textContent =
+            "Skriv en refleksjon først.";
+        return;
+    }
+
+    const entries = getJournal();
+
+    entries.unshift({
+        date: new Date().toLocaleString("no-NO"),
+        text: text
+    });
+
+    localStorage.setItem(
+        STORAGE.journal,
+        JSON.stringify(entries)
+    );
+
+    journalText.value = "";
+
+    journalStatus.textContent =
+        "Refleksjonen er lagret!";
+
+    renderJournal();
+    updateDashboard();
+
+}
+
+saveJournal.addEventListener(
+    "click",
+    saveReflection
+);
+
+
+// Vis tidligere refleksjoner
+function renderJournal() {
+
+    const history = document.getElementById(
+        "journalHistory"
+    );
+
+    history.replaceChildren();
+
+    const entries = getJournal();
+
+    entries.forEach(entry => {
+
+        const card = document.createElement("article");
+        card.className = "history-item";
+
+        const date = document.createElement("small");
+        date.textContent = entry.date;
+
+        const paragraph = document.createElement("p");
+        paragraph.textContent = entry.text;
+
+        card.append(date, paragraph);
+        history.appendChild(card);
+
+    });
+
+}
+
+renderJournal();
+
+
+// ======================================
+// 4. DASHBOARD
+// ======================================
+
+function updateDashboard() {
+
+    const entries = getJournal();
+
+    document.getElementById("reflectionCount")
+        .textContent = entries.length;
+
+    updateBooks();
+    updateTasks();
+
+}
+
+updateDashboard();
+
+
+// ======================================
+// 5. VELKOMMEN
+// ======================================
+
+console.log(
+    "NÆRVÆR er klart – din utviklingsreise fortsetter!"
+);
